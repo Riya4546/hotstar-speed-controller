@@ -18,5 +18,7 @@ chrome.runtime.onMessage.addListener((request) => {
         currentSpeed = request.speed;
 
         applySpeed();
+
+        console.log("Speed changed to:", currentSpeed);
     }
 });

@@ -14,14 +14,25 @@ function setSpeed(speed) {
     );
 }
 
-document.getElementById("speed1")
-    .addEventListener("click", () => setSpeed(1));
+window.onload = function () {
 
-document.getElementById("speed125")
-    .addEventListener("click", () => setSpeed(1.25));
+    document.getElementById("speed1")
+        .addEventListener("click", function () {
+            setSpeed(1);
+        });
 
-document.getElementById("speed15")
-    .addEventListener("click", () => setSpeed(1.5));
+    document.getElementById("speed125")
+        .addEventListener("click", function () {
+            setSpeed(1.25);
+        });
 
-document.getElementById("speed2")
-    .addEventListener("click", () => setSpeed(2));
+    document.getElementById("speed15")
+        .addEventListener("click", function () {
+            setSpeed(1.5);
+        });
+
+    document.getElementById("speed2")
+        .addEventListener("click", function () {
+            setSpeed(2);
+        });
+};
