@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <style>
-  body {
-    width: 200px;
-    padding: 10px;
-    font-family: Arial;
-  }
 
-  button {
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px;
-  }
-</style>
+<head>
+  <title>Speed Control</title>
+
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial;
+      text-align: center;
+    }
+
+    button {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
 <body>
 
-<h3>Playback Speed</h3>
+  <h3>Playback Speed</h3>
 
-<button>1x</button>
-<button>1.25x</button>
-<button>1.5x</button>
-<button>2x</button>
+  <button onclick="setSpeed(1)">1x</button>
+  <button onclick="setSpeed(1.25)">1.25x</button>
+  <button onclick="setSpeed(1.5)">1.5x</button>
+  <button onclick="setSpeed(2)">2x</button>
+
+  <script src="popup.js"></script>
 
 </body>
 </html>
