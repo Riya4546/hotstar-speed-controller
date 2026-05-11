@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hotstar Speed Controller",
+  "version": "1.0",
+  "description": "Playback speed control for Hotstar",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://www.hotstar.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.hotstar.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
